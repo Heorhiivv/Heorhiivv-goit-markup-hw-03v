@@ -1,7 +1,6 @@
 html {
   box-sizing: border-box;
 }
-
 *,
 *::before,
 *::after {
@@ -192,6 +191,7 @@ color: var(--accent-color);
   background-color: var(--third-bg-color);
 }
 .office-address p{
+  margin: 0px;
   font-size: 14px;
   line-height: 1.714;
   
