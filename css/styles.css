@@ -16,6 +16,8 @@ html {
   --third-bg-color: #2F303A;
 }
 body {
+  width: 1600px;
+  margin: 0 auto;
   font-family: Roboto, sans-serif;
 
   color: var(--primary-text-color);
@@ -32,11 +34,12 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.167;
-  /* text-align: center; */
   letter-spacing: 0.03em;
 
+  text-align: center;
+
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 50px;
 }
 address {
   font-style: normal;
@@ -51,7 +54,18 @@ img {
   margin: 0 auto;
 }
 /********** HEADER ***********/
+.page-header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.page-header-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 .logo {
+  display: flex;
+
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -68,6 +82,7 @@ img {
 }
 /* SITE-NAV */
 .site-nav {
+  display: flex;
   margin: 0px;
 
   font-weight: 500;
@@ -83,7 +98,11 @@ img {
 color: var(--accent-color);
 }
 /* CONTACTS */
+.header-contacts {
+  display: flex;
+}
 .header-contacts a {
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.143;
@@ -99,6 +118,11 @@ color: var(--accent-color);
 
 /********** HERO ***********/
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin: 0 auto;
+
+  text-align: center;
   background-color: var(--third-bg-color);
 }
 .hero-title {
@@ -109,7 +133,7 @@ color: var(--accent-color);
   font-size: 44px;
   line-height: 1.364;
   
-  text-align: center;
+  /* text-align: center; */
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
@@ -125,10 +149,9 @@ color: var(--accent-color);
   border: 1px solid transparent;
   border-radius: 4px;
 
-  display: flex;
+  /* display: flex; */
   padding: 10px 32px;
-  /* align-items: center;
-  text-align: center; */
+  /* margin: auto; */
   
   color: var(--white-text-color);
   background-color: var(--accent-color);
@@ -141,6 +164,17 @@ color: var(--accent-color);
 /********** HERO END ***********/
 
 /********* ADVANTAGES **********/
+.advantages-img {
+  margin-bottom: 30px;
+
+  display: inline-block;
+  padding: 25px 100px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  
+  background-color: var(--secondary-bg-color);
+}
 .advantages-title {
   font-weight: 700;
   font-size: 14px;
@@ -148,8 +182,15 @@ color: var(--accent-color);
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  margin: 0px;
-  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+
+  color: var(--primary-text-color);
+}
+.advantages {
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .advantages p {
   font-size: 14px;
@@ -163,9 +204,33 @@ color: var(--accent-color);
 }
 /******* ADVANTAGES END *******/
 
-/* OUR-TEAM */
+/* ********FEATURES********* */
+.features {
+  padding-bottom: 94px;
+  display: flex;
+}
+/* *******FEATURES END****** */
+
+/******* OUR-TEAM ***********/
+.our-team {
+  background-color: var(--secondary-bg-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.team-cards {
+  display: flex;
+  text-align: center;
+}
+/* .team-cards .social-media {
+  display: flex;
+  margin-bottom: 30px;
+} */
+.team-cards img {
+  margin-bottom: 30px;
+}
 .team-mamber {
-  margin: 0px;
+  margin-bottom: 10px;
+  margin-top: 0px;
 
   font-weight: 500;
   font-size: 16px;
@@ -175,23 +240,51 @@ color: var(--accent-color);
   letter-spacing: 0.03em;
 }
 .team-cards p {
-  margin: 0px;
+  margin-bottom: 16px;
+  margin-top: 0px;
 
   font-size: 16px;
-  line-height: 1.188px;
+  line-height: 1.188;
 
   /* text-align: center; */
   letter-spacing: 0.03em;
 
   color: var(--secondary-text-color);
 }
-
+/******* OUR-TEAM  END*******/
+/* *******CLIENTS********* */
+.clients-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients-list {
+  display: flex;
+  justify-content: space-around;
+}
+/* .client {
+  
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  background-color: #E5E5E5;
+} */
+/* ******CLIENTS END******* */
 /* FOOTER */
 .footer {
+  width: 1600px;
+  margin: 0 auto;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--third-bg-color);
 }
+.footer .logo {
+  margin-bottom: 20px;
+}
 .office-address p{
-  margin: 0px;
+  margin-top: 0px;
+  margin-bottom: 9px;
+
   font-size: 14px;
   line-height: 1.714;
   
@@ -212,8 +305,18 @@ color: var(--accent-color);
 .footer-contatcs:focus {
   color: var(--accent-color);
 }
-
+.footer-mailto {
+  margin-bottom: 9px;
+}
 /* PORTFOLIO*/
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.radio-btn {
+  margin-bottom: 50px;
+  text-align: center;
+}
 .btn {
   text-decoration: none;
   font-weight: 500;
@@ -221,10 +324,10 @@ color: var(--accent-color);
   line-height: 1.625;
   letter-spacing: 0.03em;
 
-  /* text-align: center;
   display: inline-block;
   padding: 6px 22px;
-  border-radius: 4px; */
+  border: 1px solid transparent;
+  border-radius: 4px;
 
   color: var(--primary-text-color);
   background-color: var(--secondary-bg-color);
@@ -234,14 +337,13 @@ color: var(--accent-color);
   color: var(--white-text-color);
   background-color: var(--accent-color);
 }
-/* .btn-icon {
-  display: inline-block;
-  height:;
-  width:;
-  margin:;background-color:;
-  vertical-align: ;
-} */
+.projects img {
+  margin-bottom: 20px;
+}
 .projects-title {
+  margin-bottom: 4px;
+  margin-top: 0px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -253,7 +355,9 @@ color: var(--accent-color);
   flex-wrap: wrap;
 }
 .projects p {
- 
+  margin-top: 0px;
+  margin-bottom: 20px;
+
   font-size: 16px;
   line-height: 1.875;
 
