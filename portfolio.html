@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g==" crossorigin="anonymous" />
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 
@@ -19,13 +20,13 @@
       <!-- Site-nav -->
       <ul class="site-nav list">
         <li class="site-nav-item">
-          <a href="./index.html" class="link">Студия</a>
+          <a href="./index.html" class="site-nav-link link">Студия</a>
         </li>
         <li class="site-nav-item">
-          <a href="./portfolio.html" class="link current">Портфолио</a>
+          <a href="./portfolio.html" class="site-nav-link link current">Портфолио</a>
         </li>
         <li class="site-nav-item">
-          <a href="" class="link">Контакты</a>
+          <a href="" class="site-nav-link link">Контакты</a>
         </li>
       </ul>
     </nav>
@@ -46,11 +47,11 @@
 
     <!-- portfolio-nav -->
       <div>
-        <a href="" class="btn">Веб-сайты</a>
-        <a href="" class="btn">Приложения</a>
-        <a href="" class="btn">Дизайн</a>
-        <a href="" class="btn">Маркетинг</a>
-        <a href="" class="btn">Все</a>
+        <a href="" class="btn"><span class="btn-icon">Веб-сайты</span></a>
+        <a href="" class="btn"><span class="btn-icon">Приложения</span></a> 
+        <a href="" class="btn"><span class="btn-icon">Дизайн</span></a>
+        <a href="" class="btn"><span class="btn-icon">Маркетинг</span></a>
+        <a href="" class="btn"><span class="btn-icon">Все</span></a>
       </div>
       <!-- <div>
         <button type="button" class="button secondary">Веб-сайты</button>
@@ -64,7 +65,7 @@
     <h2 style="display: none;">Наши проекты</h2>
 
     <ul class="projects list">
-      <li>
+      <li class="projects-item">
           <img src="./images/portfolio/tehno.jpg" width="370" alt="Laptop">
           <!-- <p>Технокряк это современная площадка распространения коронавируса.
             Компании используют эту платформу для цифрового шпионажа и атак на
@@ -73,56 +74,56 @@
           <p>Веб-сайт</p>
       </li>
     
-      <li>
+      <li class="projects-item">
           <img src="./images/portfolio/novsgs.jpg" width="370" alt="Basketball players">
           <!-- <p>Lorem ipsum dolor sit amet.</p> -->
           <h3 class="projects-title">Постер New Orlean vs Golden Star</h3>
           <p>Дизайн</p>
       </li>   
   
-      <li>
+      <li class="projects-item">
           <img src="./images/portfolio/Seafood.jpg" width="370" alt="Seafood">
           <!-- <p>Lorem ipsum dolor sit amet.</p> -->
           <h3 class="projects-title">Ресторан Seafood</h3>
           <p>Приложение</p>
       </li>
 
-      <li>
+      <li class="projects-item">
           <img src="./images/portfolio/headset.jpg" width="370" alt="Headset">
           <!-- <p>Lorem ipsum dolor sit amet consectetur.</p> -->
           <h3 class="projects-title">Проект Prime</h3>
           <p>Маркетинг</p>
       </li>
 
-      <li>
+      <li class="projects-item">
           <img src="./images/portfolio/brick.jpg" width="370" alt="Bricks">
           <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p> -->
           <h3 class="projects-title">Проект Boxes</h3>
           <p>Приложение</p>
       </li>
 
-      <li>
+      <li class="projects-item">
           <img src="./images/portfolio/img3.jpg" width="370" alt="Desktop">
           <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
           <h3 class="projects-title">Inspiration has no Borders</h3>
           <p>Веб-сайт</p>
       </li>
 
-      <li>
+      <li class="projects-item">
           <img src="./images/portfolio/book.jpg" width="370" alt="Book">
           <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed.</p> -->
           <h3 class="projects-title">Издание Limited Edition</h3>
           <p>Дизайн</p>
       </li>
 
-      <li>
+      <li class="projects-item">
           <img src="./images/portfolio/lab.jpg" width="370" alt="Label">
           <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, pariatur!</p> -->
           <h3 class="projects-title">Проект LAB</h3>
           <p>Маркетинг</p>
       </li>
 
-      <li>
+      <li class="projects-item">
           <img src="./images/portfolio/img1.jpg" width="370" alt="Notebook">
           <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p> -->
           <h3 class="projects-title">Growing Business</h3>
